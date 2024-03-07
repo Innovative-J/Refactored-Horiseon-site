@@ -11,7 +11,8 @@ body {
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    background-color: #307090;
+    /* possibliy change the color for the background header?? */
     color: #ffffff;
 }
 
@@ -20,8 +21,9 @@ body {
     font-size: 48px;
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
+#seo {
+    color: #675407;
+    /* changed the color of the text to emphasize SEO for accessibility  */
 }
 
 .header div {
@@ -32,13 +34,15 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+ul {
     list-style-type: none;
+    /* removed header and li */
 }
 
-.header div ul li {
+li {
     display: inline-block;
     margin-left: 25px;
+    /* removed header and ul */
 }
 
 a {
@@ -46,11 +50,13 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
+.benefits p {
+    font-size: 18px;
+    text-align: center;
+    /* created benefits p selector to change the font size and align the items in the center */
 }
 
-.hero {
+#hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -83,75 +89,37 @@ p {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: #0072bb;
+    /* made a changed in the background color to match the contect back ground color */
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
+.benefit-lead,
+.benefit-brand,
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
+    /* combined multiple classe selectors */
+
 }
 
-.benefit-lead h3 {
+.title {
     margin-bottom: 10px;
     text-align: center;
+    font-size: 30px;
+    /* removed mulitple individual class h3 selectors into a single selector */
+
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.icons {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+    /* removed multiple individual class img selectors into a single id selector  */
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
+.search-engine-optimization,
+.online-reputation-management,
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
@@ -159,33 +127,21 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    /* combined multiple class selectors */
 }
 
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
+.search-engine-optimization img,
+.online-reputation-management img,
 .social-media-marketing img {
     max-height: 200px;
+    /* created an id selector combinding invidiual class selectors witht the same attibutes */
 }
 
-.search-engine-optimization h2 {
+#sub-title {
     margin-bottom: 20px;
     font-size: 36px;
-}
+    /* created a class an selector combinding invidiual class selectors witht the same attibutes */
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 .footer {
@@ -198,3 +154,5 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+
